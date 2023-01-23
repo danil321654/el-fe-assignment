@@ -1,0 +1,40 @@
+.todos {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 24px;
+  align-items: center;
+  gap: 32px;
+  height: 100%;
+  &__add-todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+  }
+  &__container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    overflow-y: auto;
+  }
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid lightgray;
+  &__text {
+    color: lightslategray;
+    &--done {
+      text-decoration: line-through;
+    }
+  }
+}
