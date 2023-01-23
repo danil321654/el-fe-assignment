@@ -1,0 +1,27 @@
+.widget {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  &__data {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    table {
+      width: 100%;
+      border-spacing: 0;
+      border-collapse: collapse;
+      td,
+      th {
+        border: 1px solid black;
+      }
+    }
+  }
+  &__controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+}
